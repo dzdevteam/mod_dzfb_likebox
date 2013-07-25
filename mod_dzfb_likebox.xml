@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" client="site" version="3.1" method="upgrade">
     <name>mod_dzfb_likebox</name>
-    <creationDate>October 2012</creationDate>
-    <author>DZ's DEVELOPMENT TEAM</author>
-    <authorEmail>support@dezign.vn</authorEmail>
+    <creationDate>July 2013</creationDate>
+    <author>DZ Team</author>
+    <authorEmail>dev@dezign.vn</authorEmail>
     <authorUrl>dezign.vn</authorUrl>
-    <copyright>(C) 2012 DZ Creative Studio. All rights reserved.</copyright>
+    <copyright>(C) 2013 DZ Creative Studio. All rights reserved.</copyright>
     <version>1.0.0</version>
     <description>MOD_DZFB_LIKEBOX_DESC</description>
     
@@ -30,6 +30,53 @@
     <config>
         <fields name="params">
             <fieldset name="basic">
+                <field name="href" type="text" required="true"
+                    default="https://www.facebook.com/dezign.vn"
+                    label="MOD_DZFB_LBL_HREF"
+                    description="MOD_DZFB_DESC_HREF" />
+                <field name="width" type="text" filter="int" 
+                    class="validate-numeric" default="292"
+                    label="MOD_DZFB_LBL_WIDTH"
+                    description="MOD_DZFB_DESC_WIDTH" />
+                <field name="height" type="text" filter="int" 
+                    class="validate-numeric" default="400"
+                    label="MOD_DZFB_LBL_HEIGHT"
+                    description="MOD_DZFB_DESC_HEIGHT" />
+                <field name="show_faces" type="radio" 
+                    default="1" class="btn-group"
+                    label="MOD_DZFB_LBL_SHOW_FACES"
+                    description="MOD_DZFB_DESC_SHOW_FACES">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="colorscheme" type="radio"
+                    default="light" class="btn-group"
+                    label="MOD_DZFB_LBL_COLORSCHEME"
+                    description="MOD_DZFB_DESC_COLORSCHEME">
+                    <option value="light">MOD_DZFB_LIGHT</option>
+                    <option value="dark">MOD_DZFB_DARK</option>
+                </field>
+                <field name="stream" type="radio"
+                    default="1" class="btn-group"
+                    label="MOD_DZFB_LBL_STREAM"
+                    description="MOD_DZFB_DESC_STREAM">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="show_border" type="radio"
+                    default="1" class="btn-group"
+                    label="MOD_DZFB_LBL_SHOW_BORDER"
+                    description="MOD_DZFB_DESC_SHOW_BORDER">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
+                <field name="header" type="radio"
+                    default="1" class="btn-group"
+                    label="MOD_DZFB_LBL_HEADER"
+                    description="MOD_DZFB_DESC_HEADER">
+                    <option value="0">JNO</option>
+                    <option value="1">JYES</option>
+                </field>
             </fieldset>
             <fieldset name="advanced">
                 <field name="layout" type="modulelayout"

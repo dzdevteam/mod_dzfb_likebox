@@ -15,5 +15,7 @@ require_once __DIR__ . '/helper.php';
 
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 
+$data_attribs = modDZFacebookLikeboxHelper::getDataAttribs($params);
+
 // Display template
 require JModuleHelper::getLayoutPath('mod_dzfb_likebox', $params->get('layout', 'default'));

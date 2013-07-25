@@ -11,4 +11,5 @@
 defined('_JEXEC') or die;
 ?>
 <div class="dzfb_likebox-module<?php echo $moduleclass_sfx; ?>">
+    <div class="fb-like-box" <?php echo $data_attribs; ?>></div>
 </div>
