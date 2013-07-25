@@ -21,7 +21,9 @@
     <languages>
         <!-- Any language files included with the module -->
         <language tag="en-GB">en-GB.mod_dzfb_likebox.ini</language>
+        <language tag="en-GB">en-GB.mod_dzfb_likebox.sys.ini</language>
         <language tag="vi-VN">vi-VN.mod_dzfb_likebox.ini</language>
+        <language tag="vi-VN">vi-VN.mod_dzfb_likebox.sys.ini</language>
     </languages>
     
     <!-- Optional parameters -->
